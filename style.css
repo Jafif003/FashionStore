@@ -1,0 +1,170 @@
+:root {
+--bg-dark: #13091d;
+--card-bg: rgba(35, 19, 53, 0.75);
+--primary-purple: #9333ea;
+--hover-purple: #7e22ce;
+--light-purple: #c084fc;
+--text-main: #faf5ff;
+--text-muted: #d8b4fe;
+--border-color: #4c1d95;
+}
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+background-color: var(--bg-dark);
+color: var(--text-main);
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 40px;
+background-color: rgba(19, 9, 29, 0.9);
+border-bottom: 1px solid var(--border-color);
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+text-decoration: none;
+color: var(--text-main);
+font-weight: 800;
+font-size: 1.2rem;
+letter-spacing: 0.5px;
+}
+nav ul {
+display: flex;
+list-style: none;
+gap: 20px;
+}
+nav ul li a {
+text-decoration: none;
+color: var(--text-muted);
+transition: color 0.3s ease;
+font-size: 0.95rem;
+}
+nav ul li a:hover,
+nav ul li a.active,
+nav ul li a.customer-account-link {
+color: var(--light-purple);
+}
+.form-page {
+display: flex;
+justify-content: center;
+align-items: center;
+flex: 1;
+padding: 40px 20px;
+width: 100%;
+}
+.reveal {
+animation: fadeInUp 0.8s ease forwards;
+}
+@keyframes fadeInUp {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+.glass-card {
+background: var(--card-bg);
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+border: 1px solid var(--border-color);
+border-radius: 16px;
+padding: 40px;
+width: 100%;
+max-width: 420px;
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+.pretty-form {
+display: flex;
+flex-direction: column;
+}
+.pretty-form .eyebrow {
+font-size: 0.85rem;
+color: var(--light-purple);
+text-transform: uppercase;
+letter-spacing: 1px;
+margin-bottom: 8px;
+font-weight: 600;
+}
+.pretty-form h1 {
+font-size: 1.8rem;
+margin-bottom: 24px;
+color: var(--text-main);
+}
+.pretty-form label {
+display: block;
+font-size: 0.9rem;
+color: var(--text-muted);
+margin-bottom: 8px;
+}
+.pretty-form input {
+width: 100%;
+padding: 12px 16px;
+background-color: rgba(19, 9, 29, 0.6);
+border: 1px solid var(--border-color);
+border-radius: 8px;
+color: var(--text-main);
+font-size: 1rem;
+margin-bottom: 20px;
+outline: none;
+transition: border-color 0.3s ease;
+}
+.pretty-form input:focus {
+border-color: var(--light-purple);
+}
+.full-btn {
+width: 100%;
+padding: 12px;
+border-radius: 8px;
+font-size: 1rem;
+font-weight: 600;
+cursor: pointer;
+border: none;
+transition: background 0.3s ease, transform 0.1s ease, color 0.3s ease;
+margin-bottom: 12px;
+}
+.primary-btn {
+background-color: var(--primary-purple);
+color: white;
+}
+.primary-btn:hover {
+background-color: var(--hover-purple);
+transform: translateY(-2px);
+}
+.secondary-btn {
+background-color: transparent;
+color: var(--text-muted);
+border: 1px solid var(--border-color);
+}
+.secondary-btn:hover {
+background-color: rgba(192, 132, 252, 0.1);
+color: var(--text-main);
+transform: translateY(-2px);
+}
+.status-message {
+margin-top: 10px;
+text-align: center;
+font-size: 0.9rem;
+}
+footer {
+text-align: center;
+padding: 20px;
+color: var(--text-muted);
+font-size: 0.85rem;
+border-top: 1px solid var(--border-color);
+background-color: rgba(19, 9, 29, 0.5);
+}
