@@ -1,0 +1,161 @@
+
+
+<link rel="stylesheet" href="css/style.css">
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Design - Home</title>
+    <!-- Link to shared CSS stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Internal CSS (Required by project rubric) -->
+    <style>
+        .internal-banner {
+            background: linear-gradient(45deg, #13091d, #4c1d95);
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 20px 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo Container with Image Mapping to About Page -->
+            <div class="logo-container">
+                <img src="FD.png" alt="Fashion Design Logo" usemap="#logomap" class="logo-img">
+                <map name="logomap">
+                    <area shape="circle" coords="25,25,25" href="about.html" alt="About Us">
+                </map>
+                <span class="logo-text">Fashion Design</span>
+            </div>
+
+            <!-- Main Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="collection.html">Collections</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Main Hero Section -->
+        <section class="hero">
+            <h1>Welcome to Fashion Design</h1>
+            <p>Discover our exclusive upcoming clothing collections designed to bring elegance and style.</p>
+            <!-- Intra-page Link: Navigates directly to the Featured section below -->
+            <a href="#featured" class="btn">Featured Highlights ↓</a>
+        </section>
+
+        <!-- Brief Introduction Section -->
+        <section class="intro-section" style="padding: 40px 50px; text-align: center; background-color: var(--card-bg);">
+            <h2 style="color: var(--light-purple); margin-bottom: 15px;">Our Vision</h2>
+            <p style="color: var(--text-muted); max-width: 700px; margin: 0 auto; line-height: 1.6;">
+                Fashion Design is an innovative platform showcasing unreleased fashion concepts. We connect fashion enthusiasts with exclusive upcoming styles and wishlist features.
+            </p>
+        </section>
+
+        <!-- Internal Banner Section -->
+        <div class="internal-banner">
+            <h3 style="color: var(--light-purple);">New Season Launching Soon!</h3>
+        </div>
+
+        <!-- Call to Action (Sign Up Notification) -->
+        <section class="cta-section" style="padding: 50px 20px; text-align: center; background-color: var(--primary-purple); color: var(--text-main); margin-top: 40px;">
+            <h2 style="margin-bottom: 15px;">Never Miss a Drop!</h2>
+            <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 25px auto; line-height: 1.6;">
+                Sign up with us to receive instant notifications when the items in your wishlist become available in the market.
+            </p>
+            <a href="signup.html" class="btn" style="background-color: var(--text-main); color: var(--primary-purple);">Sign Up Now</a>
+        </section>
+
+        <!-- Featured Products Section (Top 4 Items) -->
+        <section id="featured" style="padding: 40px 50px; text-align: center;">
+            <h2 class="page-title">Featured Highlights</h2>
+            <div class="products-grid">
+                
+                <!-- Product Card 1 -->
+                <article class="product-card">
+                    <div class="image-container">
+                        <span class="badge">Top Pick</span>
+                        <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Royal+Gown" alt="Royal Gown">
+                    </div>
+                    <h3>Royal Purple Gown</h3>
+                    <p class="price">450 SAR</p>
+                </article>
+
+                <!-- Product Card 2 -->
+                <article class="product-card">
+                    <div class="image-container">
+                        <span class="badge">Trending</span>
+                        <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Silk+Blouse" alt="Silk Blouse">
+                    </div>
+                    <h3>Classic Silk Blouse</h3>
+                    <p class="price">180 SAR</p>
+                </article>
+
+                <!-- Product Card 3 -->
+                <article class="product-card">
+                    <div class="image-container">
+                        <span class="badge">Exclusive</span>
+                        <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Velvet+Jacket" alt="Velvet Jacket">
+                    </div>
+                    <h3>Velvet Evening Jacket</h3>
+                    <p class="price">320 SAR</p>
+                </article>
+
+                <!-- Product Card 4 -->
+                <article class="product-card">
+                    <div class="image-container">
+                        <span class="badge">New</span>
+                        <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Modern+Abaya" alt="Modern Abaya">
+                    </div>
+                    <h3>Modern Tailored Abaya</h3>
+                    <p class="price">390 SAR</p>
+                </article>
+
+            </div>
+
+            <!-- Inter-page Link: Button leading to the full Collections page -->
+            <div style="margin-top: 40px;">
+                <a href="collection.html" class="btn">Explore All Collections →</a>
+            </div>
+        </section>
+
+        <!-- Upcoming Schedule Table Section -->
+        <section style="padding: 40px 50px; background-color: var(--card-bg); margin-top: 30px;">
+            <h3 style="color: var(--light-purple); text-align: center; margin-bottom: 20px;">Upcoming Collection Schedule</h3>
+            <table style="width: 100%; max-width: 600px; margin: 0 auto; border-collapse: collapse; text-align: center; color: var(--text-main); border: 1px solid var(--border-color);">
+                <thead>
+                    <tr style="background-color: var(--primary-purple);">
+                        <th style="padding: 10px; border: 1px solid var(--border-color);">Collection Name</th>
+                        <th style="padding: 10px; border: 1px solid var(--border-color);">Release Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid var(--border-color);">Winter Elegance</td>
+                        <td style="padding: 10px; border: 1px solid var(--border-color);">December 2026</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid var(--border-color);">Spring Minimalist</td>
+                        <td style="padding: 10px; border: 1px solid var(--border-color);">March 2027</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Link to JavaScript File -->
+    <script src="js/script.js"></script>
+</body>
+</html>
