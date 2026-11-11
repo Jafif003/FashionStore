@@ -5,7 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FashionStore - Collection</title>
+    <title>Fashion Design - Collections</title>
+    <!-- Link to the shared CSS stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,7 +14,16 @@
     <!-- Header & Navigation Bar -->
     <header>
         <nav class="navbar">
-            <h2 class="logo">Elegance Store</h2>
+            <!-- Logo Container with Image Mapping to About Page -->
+            <div class="logo-container">
+                <img src="FD.png" alt="Fashion Design Logo" usemap="#logomap" class="logo-img">
+                <map name="logomap">
+                    <area shape="circle" coords="25,25,25" href="about.html" alt="About Us">
+                </map>
+                <span class="logo-text">Fashion Design</span>
+            </div>
+
+            <!-- Main Navigation Links -->
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="collection.html" class="active">Collections</a></li>
@@ -24,37 +34,151 @@
         </nav>
     </header>
 
-    <!-- Collection Section -->
+    <!-- Main Collection Section -->
     <main class="products-page">
-        <h2 class="page-title">New Exclusive Collection</h2>
-        <div class="products-grid">
+        <h2 class="page-title">Full Collection Showcase</h2>
+        
+        <!-- Products Grid Container (12 Items) -->
+        <div class="products-grid" id="collection-container">
             
-            <!-- Product Item 1 -->
-            <div class="product-card">
+            <!-- Product 1 -->
+            <article class="product-card">
                 <div class="image-container">
-                    <!-- z-index requirement badge -->
+                    <!-- Z-index requirement applied to the badge in CSS -->
                     <span class="badge">Exclusive</span>
-                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Evening+Dress" alt="Evening Dress">
+                    <!-- Dynamic Picture requirement: changes on mouse hover -->
+                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Royal+Gown" alt="Royal Gown" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Royal+Gown'">
                 </div>
-                <h3>Purple Evening Dress</h3>
-                <p class="price">350 SAR</p>
-                <button class="wishlist-btn">Add to Wishlist ❤️</button>
-            </div>
+                <h3>Royal Purple Gown</h3>
+                <p class="price">450 SAR</p>
+                <button class="wishlist-btn" onclick="addToWishlist('Royal Purple Gown')">Add to Wishlist ❤️</button>
+            </article>
 
-            <!-- Product Item 2 -->
-            <div class="product-card">
+            <!-- Product 2 -->
+            <article class="product-card">
                 <div class="image-container">
-                    <span class="badge">Coming Soon</span>
-                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Silk+Blouse" alt="Silk Blouse">
+                    <span class="badge">New</span>
+                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Silk+Blouse" alt="Silk Blouse" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Silk+Blouse'">
                 </div>
-                <h3>Elegant Silk Blouse</h3>
-                <p class="price">120 SAR</p>
-                <button class="wishlist-btn">Add to Wishlist ❤️</button>
-            </div>
+                <h3>Classic Silk Blouse</h3>
+                <p class="price">180 SAR</p>
+                <button class="wishlist-btn" onclick="addToWishlist('Classic Silk Blouse')">Add to Wishlist ❤️</button>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="product-card">
+                <div class="image-container">
+                    <span class="badge">Trending</span>
+                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Velvet+Jacket" alt="Velvet Jacket" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Velvet+Jacket'">
+                </div>
+                <h3>Velvet Evening Jacket</h3>
+                <p class="price">320 SAR</p>
+                <button class="wishlist-btn" onclick="addToWishlist('Velvet Evening Jacket')">Add to Wishlist ❤️</button>
+            </article>
+
+            <!-- Product 4 -->
+            <article class="product-card">
+                <div class="image-container">
+                    <span class="badge">Exclusive</span>
+                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Modern+Abaya" alt="Modern Abaya" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Modern+Abaya'">
+                </div>
+                <h3>Modern Tailored Abaya</h3>
+                <p class="price">390 SAR</p>
+                <button class="wishlist-btn" onclick="addToWishlist('Modern Tailored Abaya')">Add to Wishlist ❤️</button>
+            </article>
+
+            <!-- Product 5 -->
+            <article class="product-card">
+                <div class="image-container">
+                    <span class="badge">Limited</span>
+                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Satin+Dress" alt="Satin Dress" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Satin+Dress'">
+                </div>
+                <h3>Satin Wrap Dress</h3>
+                <p class="price">290 SAR</p>
+                <button class="wishlist-btn" onclick="addToWishlist('Satin Wrap Dress')">Add to Wishlist ❤️</button>
+            </article>
+
+            <!-- Product 6 -->
+            <article class="product-card">
+                <div class="image-container">
+                    <span class="badge">New</span>
+                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Pearl+Top" alt="Pearl Top" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Pearl+Top'">
+                </div>
+                <h3>Pearl Beaded Top</h3>
+                <p class="price">210 SAR</p>
+                <button class="wishlist-btn" onclick="addToWishlist('Pearl Beaded Top')">Add to Wishlist ❤️</button>
+            </article>
+
+            <!-- Product 7 -->
+            <article class="product-card">
+                <div class="image-container">
+                    <span class="badge">Trending</span>
+                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Maxi+Skirt" alt="Maxi Skirt" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Maxi+Skirt'">
+                </div>
+                <h3>Chiffon Maxi Skirt</h3>
+                <p class="price">150 SAR</p>
+                <button class="wishlist-btn" onclick="addToWishlist('Chiffon Maxi Skirt')">Add to Wishlist ❤️</button>
+            </article>
+
+            <!-- Product 8 -->
+            <article class="product-card">
+                <div class="image-container">
+                    <span class="badge">Exclusive</span>
+                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Linen+Suit" alt="Linen Suit" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Linen+Suit'">
+                </div>
+                <h3>Linen Summer Suit</h3>
+                <p class="price">550 SAR</p>
+                <button class="wishlist-btn" onclick="addToWishlist('Linen Summer Suit')">Add to Wishlist ❤️</button>
+            </article>
+
+            <!-- Product 9 -->
+            <article class="product-card">
+                <div class="image-container">
+                    <span class="badge">New</span>
+                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Lace+Dress" alt="Lace Dress" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Lace+Dress'">
+                </div>
+                <h3>Lace Overlay Dress</h3>
+                <p class="price">380 SAR</p>
+                <button class="wishlist-btn" onclick="addToWishlist('Lace Overlay Dress')">Add to Wishlist ❤️</button>
+            </article>
+
+            <!-- Product 10 -->
+            <article class="product-card">
+                <div class="image-container">
+                    <span class="badge">Limited</span>
+                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Sequin+Gown" alt="Sequin Gown" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Sequin+Gown'">
+                </div>
+                <h3>Sequin Party Gown</h3>
+                <p class="price">600 SAR</p>
+                <button class="wishlist-btn" onclick="addToWishlist('Sequin Party Gown')">Add to Wishlist ❤️</button>
+            </article>
+
+            <!-- Product 11 -->
+            <article class="product-card">
+                <div class="image-container">
+                    <span class="badge">Trending</span>
+                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Trench+Coat" alt="Trench Coat" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Trench+Coat'">
+                </div>
+                <h3>Minimalist Trench Coat</h3>
+                <p class="price">420 SAR</p>
+                <button class="wishlist-btn" onclick="addToWishlist('Minimalist Trench Coat')">Add to Wishlist ❤️</button>
+            </article>
+
+            <!-- Product 12 -->
+            <article class="product-card">
+                <div class="image-container">
+                    <span class="badge">Exclusive</span>
+                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Pleated+Skirt" alt="Pleated Skirt" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Pleated+Skirt'">
+                </div>
+                <h3>Dark Purple Pleated Skirt</h3>
+                <p class="price">220 SAR</p>
+                <button class="wishlist-btn" onclick="addToWishlist('Dark Purple Pleated Skirt')">Add to Wishlist ❤️</button>
+            </article>
 
         </div>
     </main>
 
+    <!-- Link to JavaScript File -->
     <script src="js/script.js"></script>
 </body>
 </html>
