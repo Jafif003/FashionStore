@@ -1,184 +1,228 @@
-
-<link rel="stylesheet" href="css/style.css">
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion Design - Collections</title>
-    <!-- Link to the shared CSS stylesheet -->
+    <!-- Link to the unified external CSS file -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header & Navigation Bar -->
+    <!-- Header and Navigation Menu -->
     <header>
-        <nav class="navbar">
-            <!-- Logo Container with Image Mapping to About Page -->
-            <div class="logo-container">
-                <img src="FD.png" alt="Fashion Design Logo" usemap="#logomap" class="logo-img">
-                <map name="logomap">
-                    <area shape="circle" coords="25,25,25" href="about.html" alt="About Us">
-                </map>
-                <span class="logo-text">Fashion Design</span>
-            </div>
-
-            <!-- Main Navigation Links -->
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="FD-Logo.png" alt="FD Logo" class="logo">
+            </a>
+            <span class="brand-name">Fashion Design</span>
+        </div>
+        <nav>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="collection.html" class="active">Collections</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="Signup.html">Sign Up</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Collection Section -->
+    <!-- Main Content Area: Products Grid -->
     <main class="products-page">
-        <h2 class="page-title">Full Collection Showcase</h2>
+        <h1 class="page-title">Our Complete Collection</h1>
         
-        <!-- Products Grid Container (12 Items) -->
-        <div class="products-grid" id="collection-container">
+        <div class="product-grid">
             
             <!-- Product 1 -->
-            <article class="product-card">
+            <div class="jood-product-card">
                 <div class="image-container">
-                    <!-- Z-index requirement applied to the badge in CSS -->
-                    <span class="badge">Exclusive</span>
-                    <!-- Dynamic Picture requirement: changes on mouse hover -->
-                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Royal+Gown" alt="Royal Gown" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Royal+Gown'">
+                    <img src="images/1.jpg" alt="Mint Green Gown" class="primary-img">
+                    <img src="images/1-b.jpg" alt="Mint Green Gown Back" class="secondary-img">
                 </div>
-                <h3>Royal Purple Gown</h3>
-                <p class="price">450 SAR</p>
-                <button class="wishlist-btn" onclick="addToWishlist('Royal Purple Gown')">Add to Wishlist ❤️</button>
-            </article>
+                <div class="product-info">
+                    <h3>Mint Green Gown</h3>
+                    <p class="price">450 SAR</p>
+
+                    <button class="wishlist-btn">Add to Wishlist</button>
+
+                </div>
+            </div>
 
             <!-- Product 2 -->
-            <article class="product-card">
+            <div class="jood-product-card">
                 <div class="image-container">
-                    <span class="badge">New</span>
-                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Silk+Blouse" alt="Silk Blouse" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Silk+Blouse'">
+                    <img src="images/2.jpg" alt="Classic Silk Blouse" class="primary-img">
+                    <img src="images/2-b.jpg" alt="Classic Silk Blouse Back" class="secondary-img">
                 </div>
-                <h3>Classic Silk Blouse</h3>
-                <p class="price">180 SAR</p>
-                <button class="wishlist-btn" onclick="addToWishlist('Classic Silk Blouse')">Add to Wishlist ❤️</button>
-            </article>
+                <div class="product-info">
+                    <h3>Classic Silk Blouse</h3>
+                    <p class="price">180 SAR</p>
+
+                    <button class="wishlist-btn">Add to Wishlist</button>
+                    
+                </div>
+            </div>
 
             <!-- Product 3 -->
-            <article class="product-card">
+            <div class="jood-product-card">
                 <div class="image-container">
-                    <span class="badge">Trending</span>
-                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Velvet+Jacket" alt="Velvet Jacket" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Velvet+Jacket'">
+                    <img src="images/3.jpg" alt="Velvet Evening Jacket" class="primary-img">
+                    <img src="images/3-b.jpg" alt="Velvet Evening Jacket Back" class="secondary-img">
                 </div>
-                <h3>Velvet Evening Jacket</h3>
-                <p class="price">320 SAR</p>
-                <button class="wishlist-btn" onclick="addToWishlist('Velvet Evening Jacket')">Add to Wishlist ❤️</button>
-            </article>
+                <div class="product-info">
+                    <h3>Velvet Evening Jacket</h3>
+                    <p class="price">320 SAR</p>
+
+                    <button class="wishlist-btn">Add to Wishlist</button>
+                    
+                </div>
+            </div>
 
             <!-- Product 4 -->
-            <article class="product-card">
+            <div class="jood-product-card">
                 <div class="image-container">
-                    <span class="badge">Exclusive</span>
-                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Modern+Abaya" alt="Modern Abaya" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Modern+Abaya'">
+                    <img src="images/4.jpg" alt="Baby Blue Gown" class="primary-img">
+                    <img src="images/4-b.jpg" alt="Baby Blue Gown Back" class="secondary-img">
                 </div>
-                <h3>Modern Tailored Abaya</h3>
-                <p class="price">390 SAR</p>
-                <button class="wishlist-btn" onclick="addToWishlist('Modern Tailored Abaya')">Add to Wishlist ❤️</button>
-            </article>
+                <div class="product-info">
+                    <h3>Baby Blue Gown</h3>
+                    <p class="price">390 SAR</p>
+
+                    <button class="wishlist-btn">Add to Wishlist</button>
+                    
+                </div>
+            </div>
 
             <!-- Product 5 -->
-            <article class="product-card">
+            <div class="jood-product-card">
                 <div class="image-container">
-                    <span class="badge">Limited</span>
-                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Satin+Dress" alt="Satin Dress" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Satin+Dress'">
+                    <img src="images/5.jpg" alt="Satin Dress" class="primary-img">
+                    <img src="images/5-b.jpg" alt="Satin Dress Back" class="secondary-img">
                 </div>
-                <h3>Satin Wrap Dress</h3>
-                <p class="price">290 SAR</p>
-                <button class="wishlist-btn" onclick="addToWishlist('Satin Wrap Dress')">Add to Wishlist ❤️</button>
-            </article>
+                <div class="product-info">
+                    <h3>Satin Dress</h3>
+                    <p class="price">410 SAR</p>
+
+                    <button class="wishlist-btn">Add to Wishlist</button>
+                    
+                </div>
+            </div>
 
             <!-- Product 6 -->
-            <article class="product-card">
+            <div class="jood-product-card">
                 <div class="image-container">
-                    <span class="badge">New</span>
-                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Pearl+Top" alt="Pearl Top" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Pearl+Top'">
+                    <img src="images/6.jpg" alt="Pearl Beaded Sweater" class="primary-img">
+                    <img src="images/6-b.jpg" alt="Pearl Beaded Sweater Back" class="secondary-img">
                 </div>
-                <h3>Pearl Beaded Top</h3>
-                <p class="price">210 SAR</p>
-                <button class="wishlist-btn" onclick="addToWishlist('Pearl Beaded Top')">Add to Wishlist ❤️</button>
-            </article>
+                <div class="product-info">
+                    <h3>Pearl Beaded Sweater</h3>
+                    <p class="price">250 SAR</p>
+
+                    <button class="wishlist-btn">Add to Wishlist</button>
+                    
+                </div>
+            </div>
 
             <!-- Product 7 -->
-            <article class="product-card">
+            <div class="jood-product-card">
                 <div class="image-container">
-                    <span class="badge">Trending</span>
-                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Maxi+Skirt" alt="Maxi Skirt" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Maxi+Skirt'">
+                    <img src="images/7.jpg" alt="Chiffon Maxi Skirt" class="primary-img">
+                    <img src="images/7-b.jpg" alt="Chiffon Maxi Skirt Back" class="secondary-img">
                 </div>
-                <h3>Chiffon Maxi Skirt</h3>
-                <p class="price">150 SAR</p>
-                <button class="wishlist-btn" onclick="addToWishlist('Chiffon Maxi Skirt')">Add to Wishlist ❤️</button>
-            </article>
+                <div class="product-info">
+                    <h3>Chiffon Maxi Skirt</h3>
+                    <p class="price">220 SAR</p>
+
+                    <button class="wishlist-btn">Add to Wishlist</button>
+                    
+                </div>
+            </div>
 
             <!-- Product 8 -->
-            <article class="product-card">
+            <div class="jood-product-card">
                 <div class="image-container">
-                    <span class="badge">Exclusive</span>
-                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Linen+Suit" alt="Linen Suit" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Linen+Suit'">
+                    <img src="images/8.jpg" alt="Linen Summer Blouse" class="primary-img">
+                    <img src="images/8-b.jpg" alt="Linen Summer Blouse Back" class="secondary-img">
                 </div>
-                <h3>Linen Summer Suit</h3>
-                <p class="price">550 SAR</p>
-                <button class="wishlist-btn" onclick="addToWishlist('Linen Summer Suit')">Add to Wishlist ❤️</button>
-            </article>
+                <div class="product-info">
+                    <h3>Linen Summer Blouse</h3>
+                    <p class="price">160 SAR</p>
+
+                    <button class="wishlist-btn">Add to Wishlist</button>
+                    
+                </div>
+            </div>
 
             <!-- Product 9 -->
-            <article class="product-card">
+            <div class="jood-product-card">
                 <div class="image-container">
-                    <span class="badge">New</span>
-                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Lace+Dress" alt="Lace Dress" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Lace+Dress'">
+                    <img src="images/9.jpg" alt="Lace Overlay Dress" class="primary-img">
+                    <img src="images/9-b.jpg" alt="Lace Overlay Dress Back" class="secondary-img">
                 </div>
-                <h3>Lace Overlay Dress</h3>
-                <p class="price">380 SAR</p>
-                <button class="wishlist-btn" onclick="addToWishlist('Lace Overlay Dress')">Add to Wishlist ❤️</button>
-            </article>
+                <div class="product-info">
+                    <h3>Lace Overlay Dress</h3>
+                    <p class="price">380 SAR</p>
+
+                    <button class="wishlist-btn">Add to Wishlist</button>
+                    
+                </div>
+            </div>
 
             <!-- Product 10 -->
-            <article class="product-card">
+            <div class="jood-product-card">
                 <div class="image-container">
-                    <span class="badge">Limited</span>
-                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Sequin+Gown" alt="Sequin Gown" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Sequin+Gown'">
+                    <img src="images/10.jpg" alt="Sequin Party Blouse" class="primary-img">
+                    <img src="images/10-b.jpg" alt="Sequin Party Blouse Back" class="secondary-img">
                 </div>
-                <h3>Sequin Party Gown</h3>
-                <p class="price">600 SAR</p>
-                <button class="wishlist-btn" onclick="addToWishlist('Sequin Party Gown')">Add to Wishlist ❤️</button>
-            </article>
+                <div class="product-info">
+                    <h3>Sequin Party Blouse</h3>
+                    <p class="price">290 SAR</p>
+
+                    <button class="wishlist-btn">Add to Wishlist</button>
+                    
+                </div>
+            </div>
 
             <!-- Product 11 -->
-            <article class="product-card">
+            <div class="jood-product-card">
                 <div class="image-container">
-                    <span class="badge">Trending</span>
-                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Trench+Coat" alt="Trench Coat" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Trench+Coat'">
+                    <img src="images/11.jpg" alt="Yellow Dress" class="primary-img">
+                    <img src="images/11-b.jpg" alt="Yellow Dress Back" class="secondary-img">
                 </div>
-                <h3>Minimalist Trench Coat</h3>
-                <p class="price">420 SAR</p>
-                <button class="wishlist-btn" onclick="addToWishlist('Minimalist Trench Coat')">Add to Wishlist ❤️</button>
-            </article>
+                <div class="product-info">
+                    <h3>Yellow Dress</h3>
+                    <p class="price">340 SAR</p>
+
+                    <button class="wishlist-btn">Add to Wishlist</button>
+                    
+                </div>
+            </div>
 
             <!-- Product 12 -->
-            <article class="product-card">
+            <div class="jood-product-card">
                 <div class="image-container">
-                    <span class="badge">Exclusive</span>
-                    <img src="https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Pleated+Skirt" alt="Pleated Skirt" class="product-img" onmouseover="this.src='https://via.placeholder.com/250x300/7e22ce/faf5ff?text=Details'" onmouseout="this.src='https://via.placeholder.com/250x300/4c1d95/faf5ff?text=Pleated+Skirt'">
+                    <img src="images/12.jpg" alt="Jeans Maxi Skirt" class="primary-img">
+                    <img src="images/12-b.jpg" alt="Jeans Maxi Skirt Back" class="secondary-img">
                 </div>
-                <h3>Dark Purple Pleated Skirt</h3>
-                <p class="price">220 SAR</p>
-                <button class="wishlist-btn" onclick="addToWishlist('Dark Purple Pleated Skirt')">Add to Wishlist ❤️</button>
-            </article>
+                <div class="product-info">
+                    <h3>Jeans Maxi Skirt</h3>
+                    <p class="price">200 SAR</p>
+
+                    <button class="wishlist-btn">Add to Wishlist</button>
+                    
+                </div>
+            </div>
 
         </div>
     </main>
 
-    <!-- Link to JavaScript File -->
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Fashion Design. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to JavaScript file -->
     <script src="js/script.js"></script>
 </body>
 </html>
