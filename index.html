@@ -6,8 +6,22 @@
     <title>Fashion Design</title>
     <!-- Link to the external CSS file located in the css folder -->
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+     /* Embedded CSS for smooth scrolling and back-to-top link */
+     html {
+         scroll-behavior: smooth;
+     }
+     .back-to-top {
+         display: inline-block;
+         margin-top: 10px;
+         color: var(--light-purple);
+         text-decoration: none;
+         font-weight: bold;
+     }
+ </style>
 </head>
-<body>
+<body id="top">
 
     <!-- Top Announcement Bar -->
     <div class="announcement-bar">
@@ -164,11 +178,21 @@
     </main>
 
     <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2026 Fashion Design. All rights reserved.</p>
-    </footer>
+    <!-- Footer Section with Internal Link -->
+ <footer>
+     <p>&copy; 2026 Fashion Design. All rights reserved.</p>
+     <a href="#top" class="back-to-top">&uarr; Back to Top</a>
+ </footer>
 
-    <!-- Link to the external JavaScript file located in the js folder -->
-    <script src="js/script.js"></script>
+ <!-- External JavaScript file -->
+ <script src="js/script.js"></script>
+
+ <!-- Embedded JavaScript for dynamic announcement text -->
+ <script>
+     const announcementText = document.querySelector('.announcement-bar p');
+     if (announcementText) {
+         announcementText.textContent = "New Season Launching Soon! Click any item to add it to your Wishlist.";
+     }
+ </script>
 </body>
 </html>ٍ

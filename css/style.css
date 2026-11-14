@@ -520,3 +520,26 @@ footer {
     text-align: center;
     font-size: 0.9rem;
 }
+
+/* Header layering and form link visibility */
+header {
+    position: relative;
+    z-index: 10;
+}
+
+.switch-form-text a {
+    color: var(--light-purple);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Compact styling for the About Us image button inside the footer */
+.footer-about-link {
+    margin-top: 12px;
+}
+
+.footer-about-img {
+    max-width: 140px;
+    height: auto;
+    border-radius: 6px;
+}
