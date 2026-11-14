@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion system | Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a class="brand" href="index.html">
+            <img src="logo.png" alt="Fashion Design Logo">
+            <span>Fashion system</span>
+        </a>
+
+<nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html" class="active">Sign Up</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="form-page reveal">
+    <form id="signup-form" class="pretty-form glass-card">
+        <p class="eyebrow">Customer Area</p>
+        <h1>Create Account</h1>
+
+        <label for="signup-name">Full Name</label>
+        <input 
+            type="text" 
+            id="signup-name" 
+            placeholder="Enter your full name" 
+            required
+        >
+
+        <label for="signup-email">Email Address</label>
+        <input 
+            type="email" 
+            id="signup-email" 
+            placeholder="Enter your email" 
+            required
+        >
+
+        <label for="signup-password">Password</label>
+        <input 
+            type="password" 
+            id="signup-password" 
+            placeholder="Create a password" 
+            required 
+            minlength="8"
+        >
+
+        <label for="confirm-password">Confirm Password</label>
+        <input 
+            type="password" 
+            id="confirm-password" 
+            placeholder="Confirm your password" 
+            required 
+            minlength="8"
+        >
+
+        <button type="submit" class="primary-btn full-btn">Sign Up</button>
+
+        <p class="switch-form-text" style="margin-top: 15px; text-align: center;">
+            Already have an account? <a href="login.html">Login here</a>
+        </p>
+
+        <p id="signup-message" class="status-message"></p>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2026 Fashion Design. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
